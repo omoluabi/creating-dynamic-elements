@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD SESSIONS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button type="button" class="btn btn-custom text-uppercase" id="addDayModal">ADD DAYS</button>
+
+    <div id="dayModal">
+        <div>
+            <h2 class="text-center">CREATING DAYS <button class="btn" id="resetDays">RESET DAYS</button> </h2>
+            <div>
+                <input type="hidden" value="1" id="count">
+                <h4>DAY 1 </h4>
+                <p>
+                    <input type="text" name="speaker1[]" class="speaker" placeholder="Speaker">
+                    <input type="text" name="topic1[]" class="topic" placeholder="Topic">
+                </p>
+                <div id="sessionContainer">
+
+                </div>
+                <button type="button" class="btn btn-custom text-uppercase" id="addSession">Add a session</button>
+            </div>
+            <hr>
+            <div id="dayContainer">
+
+            </div>
+            <div>
+                <button type="button" class="btn btn-custom text-uppercase" id="addDay">Add another day</button>
+            </div>
+        </div>
+        <div class="text-right">
+            <button class="btn btn-close" id="close">close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
